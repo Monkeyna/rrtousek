@@ -3,6 +3,8 @@ $primary: black;
 $secondary: white;
 $grey: rgb(98, 97, 97);
 $neutral: #ABB3BF;
+$lightgrey: #CAC8C9;
+$neutral_second: #677D92;
 
 $spacer: 20px;
 $biger--spacer: 2*$spacer;
@@ -465,7 +467,7 @@ position: relative;
 // *****Business to go********
 
 .kontejner__content {
-  height: 450px;
+  height: 300px;
   
 }
 
@@ -532,7 +534,7 @@ position: relative;
 
 .business__text {
   font-size: large;
-  color: $grey;
+  color: $primary
 }
 
  .foto {
@@ -605,6 +607,7 @@ position: relative;
   text-align: left;
   align-items: normal;
   grid-template-columns: repeat(1, 1fr);
+  font-size: medium;
 
  
 }
@@ -617,27 +620,120 @@ position: relative;
 .car__grid--columns {
     width: 100%;
   height: 100%;
-  background-color: $secondary;
+ 
 }
 
 
 .nadpis__cars, .obsah__cars {
   text-align: center;
-  color: black;
+  color: $secondary
 }
 
 .obsah__cars {
   font-size: medium;
+  color: $secondary;
+}
+
+.podklad__cars {
+  width: 400px;
+  height: 230px;
+  background-color: $secondary;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 5px 5px 20px $grey;
+  margin: 0;
+  
+  border: $neutral solid 3px;
+  position: relative;
+  
+
+}
+
+
+.podklad__popisek--cars {
+  width: 400px;
+  height: 200px;
+  background-color: $neutral_second;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 5px 5px 20px $grey;
+  margin: 0 0 50px 0;
+  
+  border: $neutral solid 3px;
+  
+  
+}
+
+.cars {
+  width:350px;
 }
 
 
 
+.cars__obrazek {
+  position: absolute;
+  bottom: 40px;
+  left: -30px;
+}
 
 
+
+.cars__vw {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+}
+
+.vyzva__obecne {
+  margin: 30px;
+  
+}
 
 // GDPR
 .content__gdpr {
   padding: 50px;
   border: $primary solid 5px;
   margin: 50px;
+}
+
+//tabulka
+
+table, td {
+  border: 1px solid $primary;
+  box-shadow: 5px 5px 20px $neutral;
+  background-color: $neutral_second;
+  text-align: center;
+  
+  
+}
+table, td :nth-child(2n) {
+ background-color: $neutral;
+}
+
+table, td:hover { background-color: $primary;
+color: $secondary; }
+
+#myTABLE {
+  width: 100%; }
+
+
+// Team success: 
+.flex__box {
+  display: flex;
+  margin: $spacer;
+  padding: $spacer;
+  align-items: center;
+
+}
+
+.flex__box--second {
+  display: flex;
+  margin: $spacer;
+  padding: $spacer;
+  align-items: center;
+  order: -1;
+}
+
+.flex__box--obrazek {
+  width: 700px;
+  margin: $spacer;
+  padding: $spacer;
 }
