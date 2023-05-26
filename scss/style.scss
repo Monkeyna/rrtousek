@@ -66,17 +66,12 @@ html {
 .logo {
   width: 200px;
   position: absolute;
-  left: 210px;
-  top: 350px;
+  right: 0px;
+  top: 300px;
   }
-  @media screen and  (min-width: 800px){
-    .logo 
-    { width: 200px;
-      
-      left: 0px;
-      top: 0px; } }
+ 
 
-    @media screen and  (min-width: 1100px){
+    @media screen and  (min-width: 900px){
       .logo 
       { width: 300px;
         
@@ -350,12 +345,16 @@ position: relative;
     background-color: $primary;
     padding: 30px;
     text-align: center;
+    
   }
   
 
   
 
-
+.logo__footer {
+  width: 300px;
+  margin: calc($spacer * 2) 
+}
 
 
 .footer a {
@@ -371,7 +370,7 @@ position: relative;
   
   margin: auto;
   text-align: left;
-  align-items: center;
+  align-items: normal;
   grid-template-columns: repeat(1, 1fr);
  
 }
