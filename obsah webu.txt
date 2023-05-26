@@ -1,169 +1,126 @@
+.box {
+  background-image: url(/images/success.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+ h1::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: -50px;
+  }
 
-IMPRESSUM
-"Společně pro tvůj sen..."
 
-​
+<section>
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="/images/450 x 200_audi_logo.png">0 </li>
+            <li class="glide__slide"><img src="/images/450 x 200_vw_logo.png">1</li>
+            <li class="glide__slide"><img src="/images/450 x 200_skoda_logo.png">2</li>
+          </ul>
+        </div>
+      </div>
+</section>    
 
-Při naší každodenní práci a komunikaci, se soustředíme na podporu individuálního potenciálu lidí, se kterými máme tu čest pracovat. Rozvíjíme a investujeme do lidí, do jejich projektu a podporujeme ambiciózní jednotlivce, aby si vybudovali finanční stabilitu a udržitelně úspěšnou kariéru.
 
-​
 
-Prostřednictvím naší hodnotné sítě otevíráme přístup k zajímavé příležitosti 21. století. Naše předchozí mezinárodní činnost nám dává příležitost cíleně využít naše podnikatelské a obchodní zkušenosti za více než 25 let v Networkingu.
+.spacer__second {
+  width: 200px;
+  height: 210px;
+  border: black solid 5px;
+  background-color: rgb(255, 0, 140);
+}
+.spacer {
+  width: 200px;
+  height: 170px;
+  border: black solid 5px;
+  background-color: blue;
 
-​
 
-Lidé nad produktem - "Kdo" před "Čím": Lidé jsou pro nás důležití. Osobnost vede společnost, ne naopak. Proto byl se skupinou RRTOUSEK vyvinut korporátní koncept, který investuje do lidí svým časem, know-how a sítí, aby mohli rychleji úspěšně a finančně růst.Úspěšný je ten, kdo dělá ostatní úspěšnými
-Jste srdečně vítáni v našem týmu. Naše vize a naše poslání je váš úspěch! Čím úspěšnější je náš tým, tím úspěšnější jsme my.
 
-​
 
-Vzájemně se podporujeme. Jeden za všechny, všichni za jednoho. Vzniká vzájemné přátelství, které se rozvíjí prostřednictvím soudržnosti a vaše osobnost roste.
 
-​
+<div class="cookies">
 
-Za svůj výkon budete odměněni jak finančně, tak také spoustou uznání, luxusními auty, úžasnými akcemi a exkluzivními tripy.
+   <h3> Co jsou cookies? Aneb podělte se o to, co se vám líbí.</h3>
+    <p> My i naši partneři ukládáme do vašeho zařízení soubory cookies. Tím získáváme informace, které nejsou citlivé, jako např. IP adresy a jedinečné identifikátory vašich zařízení a údaje o tom, jak používáte naše stránky. Tyto informace zpracováváme pro účely jako např. zobrazování personalizovaných reklam, měření preferencí našich návštěvníků či zlepšování našich produktů. V rámci tohoto okna s tímto můžete souhlasit, nesouhlasit, popřípadě získat další informace a provést podrobnější nastavení. Vše můžete kdykoli změnit v našich Zásadách používání souborů cookies.
+   <br> Údaje získané prostřednictvím cookies se zpracovávají zejména následujícím způsobem: <br>
+   <br> Výběr, zobrazování a měření personalizované reklamy a obsahu, získávání a analýza poznatků o okruzích publika a vývoj produktů, párování a kombinování zdrojů offline dat, propojení různých zařízení, získávání a analýza údajů o geografické poloze a identifikace pomocí dotazování zařízení, ukládání a/nebo přístup k informacím v zařízení, přijetí a použití automaticky zasílaných specifických vlastností zařízení pro identifikaci, zajištění bezpečnosti, předcházení podvodům a odstraňování chyb.
+    </p>
+    </div>
 
-​
 
-Staňte se naší součástí. Naučte se, jak funguje 21. století!
 
-​
+.cookies {
+  width: 700px;
+  background-color: lightgray;
+  color: black;
+  border: lightgray solid;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px $primary;
+  position: absolute;
+  top: 700px;
+  left: 400px;
+  font-size: small;
+  padding: 20px;
 
-Rádi Vás přivítáme do našeho týmu.
+}
 
 
+.button__secondary {
+  display: inline-block;
+  color: $primary;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 30px;
+  border: 1px solid $primary;
+  border-radius: 5px;
+  background-color: rgb(19,177,31);
+  margin: 30px 0 0 0;
+}
 
-BUSINESS TO GO
-Život v 21. století je naprosto jiný, je plný příležitostí, a to i pro velmi mladou generaci. Mít práci, která vás baví, kde si sami můžete flexibilně rozvrhnout aktivity a pracovat z jakéhokoli místa na světě, je představa většiny (nejen) mladých lidí. Podle nás toto je skutečná kvalita života. Tlak v "normálním pracovním světě" se zvyšuje! Většina lidí 4 - 8 let studují, aby se připravili na dlouhých 50 let práce, kde musí každý týden odpracovat minimálně 42,5 hodin od pondělí do pátku.
+.button__third {
+  display: inline-block;
+  color: $primary;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 30px;
+  border: 1px solid $primary;
+  border-radius: 5px;
+  background-color: lightgray;
+  
+  margin: 30px 0 0 0;
+}
 
-​
 
-Mnoho z těchto lidí chce flexibilnější pracovní dobu, možnost pracovat odkudkoli, vyšší příjmy a víc času na své děti, svou rodinu, své přátele a na sebe. Pokud máte silnou touhu nemuset strávit celý svůj aktivní život prací, chcete být flexibilní a aktivní z domova nebo na cestách, pak si s naší cílenou podporou vybudujte "Business to Go".
 
-​
 
-Napište si o registraci na naši 30 minutovou Live Online Prezentaci "Upgradujte svůj život" a nezávazně zjistěte, jaké máte možnosti a šance. Chcete-li obdržet pozvánku na tuto prezentaci, napište nám.
+ .foto:hover img {
+     transform: scale(1.15);
+ }
 
 
 
-CAR CONCEPT
-I auto může šetřit vaši peněženku
 
-​
 
-Není žádné tajemství, že většina lidí za svůj život utratí za koupi aut 6 - 7 000 000Kč a že je k tomu potřeba přibližně 25% měsíčního příjmu? Celkem drahý český, moravský i slovenský koníček! Je pak pro vás zajímavé, že můžete řídit své nové auto téměř zdarma? Jako nezávislý obchodní partner si vytvoříte svůj vlastní malý tým a už od obratu 52 000Kč / 2 000€ si své auto můžete okamžitě objednat (partneři s ambicemi na to potřebují 8 až 10 týdnů). Poté můžete každé 2 roky řídit nové auto a různé modely s mega malými částkami leasingových splátek, bez akontace, bez nákladů na převod, bez servisních plateb a navíc získat 7 - 70 000Kč / 250 - 2 500€ Fast Track bonus měsíčně.
 
-​
 
-Pokud jste na úrovni Junior Manažer, bude vám navíc proplaceno dalších 1 860Kč / 79,18€ jako Auto-Bonus. Pak například váš nový VW Golf bude stát jen 4 711Kč / 207,82€ měsíčně - skvělé, že?
 
-​
 
-Mimochodem, pokud se svým týmem vytvoříte tržby ve výši 104 000Kč / 4 000€, pak nedostanete navíc Auto-Bonus 1 860Kč / 79,18€, nýbrž dokonce 3 660Kč / 158,35€, takže VW Golf vás bude stát jen neuvěřitelných 2 911Kč / 128,65€! K tomu navíc obdržíte 28 000Kč / 1000€ Fakt Track bonus měsíčně, protože jste na pozici Junior Týmový Manažer! A to je teprve váš start!​
 
- 
 
-Jakmile dosáhnete úrovně Organizační Manažer a se svým týmem vytvoříte tržby ve výši 312 000Kč / 12 000€, pak nedostanete navíc Auto-Bonus 3 660Kč / 158,35€, nýbrž dokonce 11 160Kč / 406,00€ a navíc obdržíte 57 - 70 000Kč / 2000 - 2500€ Fast Track bonus měsíčně, protože jste na pozici Organizační Manažer! A to už je základ vaší úspěšné firmy!​
 
-​
 
-Mimochodem, nejen, že tady máte možnost neomezeného příjmu, ale také si v budoucnu budete moci sami vybírat auta svých snů z různých modelů značek. VW, Mercedes Benz, Audi a Porsche.
 
-​
 
-Svět prémiových automobilových tříd a modelů se vám otevírá už od úrovně Stříbrného Organizačního Manažera. Zde jsou v nabídce např. Mercedes CLS, Mercedes třídy S nebo Mercedes GLS. Troufáte si ještě výš? Pak splňte úroveň Platinový Organizační Manažer a jsou vám k dispozici Porsche Panamera, Mercedes AMG GT či Audi R8.
 
-Od úrovně Stříbrný Organizační Manažer získáte každý měsíc Auto-Bonus ve výši 17 050Kč / 620€ až 35 750Kč / 1 300€, a to každý měsíc, abyste mohli luxusně reprezentovat sebe, svou firmu a plnili si své vize a sny.
 
-Napište nám, pokud vás zajímají koncepty vozů.
-
-Zaregistrujte se nyní
-5289D3DA-4CDD-4E82-90F8-579DDBE3B40E_4_5005_c.jpeg
-QUALITY TIME
-K tomu vy a vaše rodina získáte více ze života.
-
-​
-
-Čím můžete udělat váš život kvalitnější, abyste se doslova bavili životem a stálo za to žít? Jsou to hodnotné věci, jako je více volného času, více cestování, vyšší příjmy a více času pro vás a vaši rodinu? I přesto, že každý máme jiný pohled na kvalitu života, víc času pro sebe, své záliby a především pro svou rodinu, je zcela jistě žádoucí pro 90% lidí!
-
-​
-
-Vaše možnosti jako zaměstnance, jsou bohužel většinou natolik omezené, že exkluzivní životní styl je vyhrazen jen málokomu. Dneska už víme, že jako zaměstnanec vždy pracujete pro cíle a vize druhých lidí a že pouze přechod ze zaměstnance na podnikatele vám může přinést změnu.
-
-​
-
-V naší prezentaci "Upgradujte svůj život" zjistíte, jak se i vy můžete stát podnikatelem bez předchozích znalostí. Napište nám.
-
-
-Zaregistrujte se nyní
-07975CA6-CFFD-4801-B1DF-874174C4D9E3.png
-TEAM SUCCESS
-Stačí mít kolem sebe správný tým a běhen vteřiny se vám změní život!
-
- 
-
-Náš úspěch je založen na tom, že našemu týmu jdeme vlastním příkladem. Přímo v praxi ukazujeme a koučujeme, jak vydělat 
-
-57 000Kč++ / 2 000€ a víc měsíčně na Part-Time a postupně si vytvořit nadstandardní šestimístné měsíční příjmy, mít úspěšnější a kvalitnější život s absolutní flexibilitou času.
-
-​
-
-Pokud jste také týmový hráč, máte ambice a hledáte novou výzvu, pak nás tedy kontaktujte pomocí zprávy nebo kontaktního formuláře (viz níže).
-
-​
-
-Nechte na sebe působit naši 30 minutovou prezentaci a rozhodněte se podle svého pocitu.
-
-
-Chci info
-Kontaktujte mě na:
-
-Mobil:
-
-+420 777 977 812
-
-​
-
-WhatsApp:
-
-+420 777 977 812
-
-​
-
-E-mail:
-
-romantousek1@gmail.com
-
-​
-
-Social Media:
-
-​
-
-​
-
-​
-
-Instagram:
-
-@rrtousek_
-
-​
-
-Facebook:
-
-romantousek
-
-Facebook 
-Instagram       
-Úspěch má 3 písmena:
-
-ČIN
-
-Začněte tedy svůj úspěšný příběh ještě dnes!
-
-Spojte se s námi přes uvedené kontakty, případně vyplňte a odešlete formulář.
-E-Mail
-Jméno a Příjmení
-Město
-Mobil
+}

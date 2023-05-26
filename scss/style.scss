@@ -11,32 +11,6 @@ $biger--spacer: 2*$spacer;
 
 
 
-.list__normal { list-style-type: none;
-
-}
-
-.list__square {
-  list-style-type: square;
-  margin: 0 0 0 100px;
-}
-
-.list__small_letters { list-style-type: lower-alpha;
-
-}
-
-.list__dash { list-style-type: disc;
-  margin: 0 0 0 100px;
-}
-
-
-
-
-
-
-
-
-
-
 html {
     box-sizing: border-box;
   }
@@ -91,14 +65,23 @@ html {
 //HEADER
 .logo {
   width: 200px;
+  position: absolute;
+  left: 210px;
+  top: 350px;
   }
   @media screen and  (min-width: 800px){
     .logo 
-    { width: 200px; } }
+    { width: 200px;
+      
+      left: 0px;
+      top: 0px; } }
 
     @media screen and  (min-width: 1100px){
       .logo 
-      { width: 300px; } }
+      { width: 300px;
+        
+      left: 0;
+      top: 0; } }
 
 .content__header {
   display: flex;
@@ -162,7 +145,7 @@ position: relative;
 
 .hlavicka__obsah {
   position: absolute;
-  top: 400px;
+  top: 430px;
   left: 60px;
 
   
@@ -240,7 +223,7 @@ position: relative;
   }
   
 
-// main
+// main hlavní strana
 
 
 .hlavni__obrazek {
@@ -466,10 +449,19 @@ position: relative;
 
 // *****Business to go********
 
+
 .kontejner__content {
-  height: 300px;
+  height: 1680px; }
+  @media screen and  (min-width: 900px){
+    .kontejner__content  { 
+      height: 900px;} }
   
-}
+      @media screen and  (min-width: 1100px){
+        .kontejner__content  { 
+          height: 600px;
+          
+          } }
+
 
 .logo_vw {
   width: 400px;
@@ -477,17 +469,29 @@ position: relative;
 
 }
 
-.kontejner {
-  text-align: center;
+.kontejner__text {
+  font-size: medium;
   position: absolute;
-  top: 100px;
-  left: 500px;
-}
-
-
-
-
-
+  text-align: center;
+  top: 400px;
+  left: 20px;
+  height: 600px;
+  
+ }
+  @media screen and  (min-width: 900px){
+    .kontejner__text  { 
+      
+      
+      top: 60px;
+      left: 100px;} }
+  
+      @media screen and  (min-width: 1100px){
+        .kontejner__text  { 
+          top: 100px;
+          left: 500px;}}
+  
+  
+ 
 
 .foto {
  position: relative;
@@ -504,7 +508,7 @@ position: relative;
 
 .foto .popisek {
  margin: 10px 0 20px 0;
- color: #888;
+ color: $secondary;
  font-family: 'Raleway', sans-serif;
  font-size: 13px;
  line-height: 1.2;
@@ -522,7 +526,7 @@ position: relative;
 
 
 .foto .popisek a {
- color: #888;
+ color: $primary;
 }
 
 
@@ -545,15 +549,22 @@ position: relative;
  }
 
 .galerie {
+  
   display: grid;
-  grid-template-columns: repeat( 3, 1fr);
-  position: absolute;
-  top: 430px;
+  grid-template-columns: repeat( 1, 1fr);
+ }
 
 }
+@media screen and  (min-width: 900px){
+  .galerie { grid-template-columns: repeat(2, 1fr);
+    ;
+    } }
 
-
-
+    @media screen and  (min-width: 1100px){
+      .galerie { 
+        
+        grid-template-columns: repeat( 3, 1fr);
+        } }
 
 
  .foto .popisek {
@@ -566,32 +577,18 @@ position: relative;
      color: white;
      font-size: 24px;
      transform: translateY(100%);
-     transition: transform 0.3s ease-in-out;
+     
  }
 
 
  .foto .popisek a {
      color: white;
+
  }
 
 
- .foto .popisek {
-     transform: translateY(0);
- }
 
 
-}
-
-
-
-
-
-
-@media (min-width: 1000px) {
-
-
-
-}
 
 // *****CAR CONCEPT
 
@@ -608,6 +605,7 @@ position: relative;
   align-items: normal;
   grid-template-columns: repeat(1, 1fr);
   font-size: medium;
+  margin: 5px;
 
  
 }
@@ -615,7 +613,8 @@ position: relative;
 
     @media screen and  (min-width: 1100px){
       .car__grid { 
-        grid-template-columns: repeat(3, 1fr); } }
+        grid-template-columns: repeat(3, 1fr);
+      margin: 30px } }
 
 .car__grid--columns {
     width: 100%;
@@ -635,18 +634,30 @@ position: relative;
 }
 
 .podklad__cars {
-  width: 400px;
-  height: 230px;
-  background-color: $secondary;
+ background-color: $secondary;
   border-radius: 10px 10px 0 0;
   box-shadow: 5px 5px 20px $grey;
   margin: 0;
-  
   border: $neutral solid 3px;
   position: relative;
+  width: 400px;
+  height: 230px;
   
 
-}
+}  
+ 
+@media screen and  (min-width: 1100px){
+  .podklad__cars { 
+    width: 400px;
+  height: 230px;
+ 
+  
+   } }
+
+
+
+
+
 
 
 .podklad__popisek--cars {
@@ -666,7 +677,12 @@ position: relative;
   width:350px;
 }
 
-
+.logo__auta {
+  padding: 30px;
+  
+  
+  
+}
 
 .cars__obrazek {
   position: absolute;
@@ -683,16 +699,43 @@ position: relative;
 }
 
 .vyzva__obecne {
-  margin: 30px;
-  
+  margin: 0  30px 30px 60px;
+  font-size: medium;
 }
+@media screen and  (min-width: 900px){
+  .vyzva__obecne { 
+    font-size: large;
+   } }
+
 
 // GDPR
 .content__gdpr {
   padding: 50px;
-  border: $primary solid 5px;
   margin: 50px;
+  font-size: small;
 }
+
+
+@media screen and  (min-width: 900px){
+  .content__gdpr { 
+    border: $primary solid 5px;
+    font-size: large;
+   } }
+
+//GDPR - list
+.list__normal { list-style-type: none;
+}
+.list__square {
+  list-style-type: square;
+  margin: 0 0 0 100px;
+}
+.list__small_letters { list-style-type: lower-alpha;
+}
+.list__dash { list-style-type: disc;
+  margin: 0 0 0 100px;
+}
+
+
 
 //tabulka
 
@@ -712,28 +755,73 @@ table, td:hover { background-color: $primary;
 color: $secondary; }
 
 #myTABLE {
-  width: 100%; }
+  width: 70%; 
+  margin: 60px;}
 
 
 // Team success: 
 .flex__box {
-  display: flex;
+  display: block;
+  margin: calc($spacer * 2) ;
+  padding: $spacer;
+  
+
+}
+
+@media screen and  (min-width: 1100px){
+  .flex__box { 
+    display: flex;
   margin: $spacer;
   padding: $spacer;
   align-items: center;
-
-}
+   } }
 
 .flex__box--second {
-  display: flex;
+  display: block;
+  margin: $spacer;
+  padding: $spacer;
+  
+  
+}
+
+@media screen and  (min-width: 1100px){
+  .flex__box--second { 
+    display: flex;
   margin: $spacer;
   padding: $spacer;
   align-items: center;
-  order: -1;
-}
+   } }
+
+
+
+
+
 
 .flex__box--obrazek {
-  width: 700px;
-  margin: $spacer;
-  padding: $spacer;
+  width: 400px;
+  margin: calc($spacer / 2);
+  
 }
+
+@media screen and  (min-width: 900px){
+  .flex__box--obrazek { 
+    width: 500px;
+    margin: $spacer;
+    padding: $spacer;
+   } }
+
+@media screen and  (min-width: 1100px){
+  .flex__box--obrazek { 
+    width: 700px;
+    margin: $spacer;
+    padding: $spacer;
+   } }
+
+.flex__box--text {
+  font-size: medium;
+}
+
+@media screen and  (min-width: 900px){
+  .flex__box--text  { 
+    font-size: large;
+   } }

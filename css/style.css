@@ -1,21 +1,3 @@
-.list__normal {
-  list-style-type: none;
-}
-
-.list__square {
-  list-style-type: square;
-  margin: 0 0 0 100px;
-}
-
-.list__small_letters {
-  list-style-type: lower-alpha;
-}
-
-.list__dash {
-  list-style-type: disc;
-  margin: 0 0 0 100px;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -53,16 +35,23 @@ h2::after {
 
 .logo {
   width: 200px;
+  position: absolute;
+  left: 210px;
+  top: 350px;
 }
 
 @media screen and (min-width: 800px) {
   .logo {
     width: 200px;
+    left: 0px;
+    top: 0px;
   }
 }
 @media screen and (min-width: 1100px) {
   .logo {
     width: 300px;
+    left: 0;
+    top: 0;
   }
 }
 .content__header {
@@ -115,7 +104,7 @@ h2::after {
 
 .hlavicka__obsah {
   position: absolute;
-  top: 400px;
+  top: 430px;
   left: 60px;
   font-style: italic;
   color: white;
@@ -366,21 +355,45 @@ h2::after {
 }
 
 .kontejner__content {
-  height: 300px;
+  height: 1680px;
 }
 
+@media screen and (min-width: 900px) {
+  .kontejner__content {
+    height: 900px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .kontejner__content {
+    height: 600px;
+  }
+}
 .logo_vw {
   width: 400px;
   padding: 45px 20px 20px 70px;
 }
 
-.kontejner {
-  text-align: center;
+.kontejner__text {
+  font-size: medium;
   position: absolute;
-  top: 100px;
-  left: 500px;
+  text-align: center;
+  top: 400px;
+  left: 20px;
+  height: 600px;
 }
 
+@media screen and (min-width: 900px) {
+  .kontejner__text {
+    top: 60px;
+    left: 100px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .kontejner__text {
+    top: 100px;
+    left: 500px;
+  }
+}
 .foto {
   position: relative;
   display: block;
@@ -394,7 +407,7 @@ h2::after {
 
 .foto .popisek {
   margin: 10px 0 20px 0;
-  color: #888;
+  color: white;
   font-family: "Raleway", sans-serif;
   font-size: 13px;
   line-height: 1.2;
@@ -408,7 +421,7 @@ h2::after {
 }
 
 .foto .popisek a {
-  color: #888;
+  color: black;
 }
 
 @media (min-width: 600px) {
@@ -423,29 +436,35 @@ h2::after {
   }
   .galerie {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    position: absolute;
-    top: 430px;
-  }
-  .foto .popisek {
-    position: absolute;
-    width: 100%;
-    top: 0px;
-    margin: 0;
-    padding: 30px 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 24px;
-    transform: translateY(100%);
-    transition: transform 0.3s ease-in-out;
-  }
-  .foto .popisek a {
-    color: white;
-  }
-  .foto .popisek {
-    transform: translateY(0);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
+@media screen and (min-width: 900px) {
+  .galerie {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1100px) {
+  .galerie {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.foto .popisek {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  margin: 0;
+  padding: 30px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  transform: translateY(100%);
+}
+
+.foto .popisek a {
+  color: white;
+}
+
 .car__grid {
   padding: 40px;
   color: white;
@@ -455,11 +474,13 @@ h2::after {
   align-items: normal;
   grid-template-columns: repeat(1, 1fr);
   font-size: medium;
+  margin: 5px;
 }
 
 @media screen and (min-width: 1100px) {
   .car__grid {
     grid-template-columns: repeat(3, 1fr);
+    margin: 30px;
   }
 }
 .car__grid--columns {
@@ -478,16 +499,22 @@ h2::after {
 }
 
 .podklad__cars {
-  width: 400px;
-  height: 230px;
   background-color: white;
   border-radius: 10px 10px 0 0;
   box-shadow: 5px 5px 20px rgb(98, 97, 97);
   margin: 0;
   border: #ABB3BF solid 3px;
   position: relative;
+  width: 400px;
+  height: 230px;
 }
 
+@media screen and (min-width: 1100px) {
+  .podklad__cars {
+    width: 400px;
+    height: 230px;
+  }
+}
 .podklad__popisek--cars {
   width: 400px;
   height: 200px;
@@ -500,6 +527,10 @@ h2::after {
 
 .cars {
   width: 350px;
+}
+
+.logo__auta {
+  padding: 30px;
 }
 
 .cars__obrazek {
@@ -515,13 +546,43 @@ h2::after {
 }
 
 .vyzva__obecne {
-  margin: 30px;
+  margin: 0 30px 30px 60px;
+  font-size: medium;
 }
 
+@media screen and (min-width: 900px) {
+  .vyzva__obecne {
+    font-size: large;
+  }
+}
 .content__gdpr {
   padding: 50px;
-  border: black solid 5px;
   margin: 50px;
+  font-size: small;
+}
+
+@media screen and (min-width: 900px) {
+  .content__gdpr {
+    border: black solid 5px;
+    font-size: large;
+  }
+}
+.list__normal {
+  list-style-type: none;
+}
+
+.list__square {
+  list-style-type: square;
+  margin: 0 0 0 100px;
+}
+
+.list__small_letters {
+  list-style-type: lower-alpha;
+}
+
+.list__dash {
+  list-style-type: disc;
+  margin: 0 0 0 100px;
 }
 
 table, td {
@@ -541,26 +602,63 @@ table, td:hover {
 }
 
 #myTABLE {
-  width: 100%;
+  width: 70%;
+  margin: 60px;
 }
 
 .flex__box {
-  display: flex;
-  margin: 20px;
+  display: block;
+  margin: 40px;
   padding: 20px;
-  align-items: center;
 }
 
+@media screen and (min-width: 1100px) {
+  .flex__box {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+  }
+}
 .flex__box--second {
-  display: flex;
+  display: block;
   margin: 20px;
   padding: 20px;
-  align-items: center;
-  order: -1;
 }
 
+@media screen and (min-width: 1100px) {
+  .flex__box--second {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+  }
+}
 .flex__box--obrazek {
-  width: 700px;
-  margin: 20px;
-  padding: 20px;
+  width: 400px;
+  margin: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .flex__box--obrazek {
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .flex__box--obrazek {
+    width: 700px;
+    margin: 20px;
+    padding: 20px;
+  }
+}
+.flex__box--text {
+  font-size: medium;
+}
+
+@media screen and (min-width: 900px) {
+  .flex__box--text {
+    font-size: large;
+  }
 }/*# sourceMappingURL=style.css.map */
