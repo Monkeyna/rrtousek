@@ -92,7 +92,7 @@ background-size: cover, cover;
 background-position: initial,center center;
 background-repeat: initial, no-repeat;
 
-height: 750px;
+height: 800px;
 position: relative;
 
 }
@@ -472,9 +472,10 @@ position: relative;
   font-size: medium;
   position: absolute;
   text-align: center;
-  top: 400px;
+  top: 330px;
   left: 20px;
-  height: 600px;
+  height: 500px;
+  margin: 0;
   
  }
   @media screen and  (min-width: 900px){
@@ -551,6 +552,7 @@ position: relative;
   
   display: grid;
   grid-template-columns: repeat( 1, 1fr);
+  
  }
 
 }
